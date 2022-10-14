@@ -31,7 +31,7 @@
 
                 <nav class="gnb">
                     <ul>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a>
                         <li><a href="#">Store</a></li>
                         <li><a href="#">What's New</a></li>
                         <li><a href="#" id="select">Story</a></li>
@@ -46,6 +46,40 @@
 
                     </ul>
                 </nav>
+            </div>
+            <div class="hideMenubar hide">
+                <ul >
+                    <li><a href="#" >버거</a></li>
+                    <li><a href="#" >해피 스낵</a></li>
+                    <li><a href="#" >맥런치</a></li>
+                    <li><a href="#" >맥모닝</a></li>
+                    <li><a href="#" >사이드 &amp; 디저트</a></li>
+                    <li><a href="#" >맥카페 &amp; 음료</a></li>
+                    <li><a href="#" >해피밀</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#" >매장찾기</a></li>
+                    <li><a href="#" >맥딜리버리</a></li>
+                    <li><a href="#" >맥드라이브</a></li>
+                    <li><a href="#" >임차문의</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#" >프로모션</a></li>
+                    <li><a href="#" >새로운 소식</a></li>
+                    <li><a href="#" >이달의 해피밀</a></li> 
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#" >브랜드 소개</a></li>
+                    <li><a href="#" >사회적 책임과 지원</a></li>
+                    <li><a href="#" >맥도날드 품질 이야기</a></li>
+                    <li><a href="#" >맥도날드 사람들</a></li>
+                </ul>
             </div>
         </header>
         <!-- //header -->
@@ -162,9 +196,9 @@
                 </ul>
                 <ul class="info">
                     <li>한국맥도날드(유)</li>
-                    <li>대표이사 : 김기원</li>
-                    <li>사업자등록번호:101-81-26409</li>
-                    <li>전화주문:1600-5252</li>
+                    <li>대표이사: 김기원</li>
+                    <li>사업자등록번호: 101-81-26409</li>
+                    <li>전화주문: 1600-5252</li>
                     <li>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</li>
                 </ul>
                 <ul class="sns">
@@ -173,14 +207,31 @@
                     <li><a href="#" class="youtube"></a></li>
                     <li><a href="#" class="kakaostory"></a></li>
                     <li><a href="#" class="web_accessibility">
-                    </a></li>
+                        </a></li>
                 </ul>
             </div>
 
         </footer>
     </div>
     <!-- //footer -->
+<script>
+    
+    const $hideMenubar = document.querySelector(".hideMenubar");
+    const $hover = [...document.querySelectorAll(".inner-header nav.gnb li")];
+    function hide(){
+        $hideMenubar.classList.add('hide');
+    }
+    function open(){
+        $hideMenubar.classList.remove('hide');
+    }
+    for(let menu of $hover){
+        menu.addEventListener('mouseenter',open);
+        menu.addEventListener('mouseleave',hide);
+        $hideMenubar.addEventListener("mouseleave",hide);
+    }
 
+   
+</script>
 </body>
 
 </html>
