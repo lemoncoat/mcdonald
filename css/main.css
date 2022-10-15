@@ -1,3 +1,6 @@
+
+/*  구글 웹폰트 로딩  */
+@import url('https://db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee');
 .topNav {
     border: 1px solid blue;
     overflow: hidden;
@@ -58,11 +61,11 @@
     padding: 0;
 }
 
-li {
+.main li {
     float: left;
 }
 
-li a,
+.main li a,
 .dropbtn {
     display: inline-block;
     color: black;
@@ -151,6 +154,8 @@ h1 {
     margin-left: 5%;
     margin-bottom: 5%;
     display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
 
 }
 
@@ -171,11 +176,11 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.7
 }
-
+#main_img{
+    margin-top: 40px;
+}
 /*  */
 
-/*  구글 웹폰트 로딩  */
-@import url('https://db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee');
 /* header style */
 
 
