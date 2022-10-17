@@ -28,7 +28,7 @@
                         <li><a href="#">Menu</a>
                         <li><a href="#">Store</a></li>
                         <li><a href="#">What's New</a></li>
-                        <li><a href="#" id="select">Story</a></li>
+                        <li><a href="./story.html">Story</a></li>
                     </ul>
                 </nav>
                 <nav class="tnb">
@@ -278,6 +278,23 @@
 </div>
 </div>
 <!-- //footer -->
+
 </div>
+<script>
+    
+    const $hideMenubar = document.querySelector(".hideMenubar");
+    const $hover = [...document.querySelectorAll(".inner-header nav.gnb li")];
+    function hide(){
+        $hideMenubar.classList.add('hide');
+    }
+    function open(){
+        $hideMenubar.classList.remove('hide');
+    }
+    for(let menu of $hover){
+        menu.addEventListener('mouseenter',open);
+        menu.addEventListener('mouseleave',hide);
+        $hideMenubar.addEventListener("mouseleave",hide);
+    }
+</script>
 </body>
 </html>

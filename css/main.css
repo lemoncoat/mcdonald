@@ -236,14 +236,7 @@ header{
 .inner-header nav.gnb li:last-child{
     margin-left:80px;
 }
-.inner-header nav.gnb #select::before{
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 55px;
-    width: 53px;
-    border-bottom: 1px solid #000;
-}
+
 .inner-header nav.gnb li a{
   
     font-size: 20px;

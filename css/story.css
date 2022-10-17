@@ -167,12 +167,12 @@ section .visualArea{
     height: 200px;
     position: relative;
 }
-section .visualArea h2{
+section .visualArea h1{
     position: absolute;
     font-size: 110px;
     font-weight: 600;
     left: 19.15%;
-    bottom: -1px;
+   h bottom: -1px;
     color: #292929;
 }
 
@@ -181,7 +181,7 @@ section .contentArea {
     width: 61.7%;
     margin: auto;
 }
-section .contentArea h3{
+section .contentArea h2{
     font-size: 30px;
     font-weight: 500;
     padding: 0 0 30px ;
@@ -239,7 +239,7 @@ section .subMain .textArea {
     width: 518px;
 }
 
-section .subMain .textArea h4{
+section .subMain .textArea h3{
     padding: 0 0 20px;
     font-size: 40px;
     font-weight: 600;
